@@ -7,5 +7,7 @@
 
 gmt begin outputs/basemap png
 
-gmt psbasemap -R0/9/0/5 -Jx1c -Bf1a2 -Bx+lDistance -By+l"No of samples" -BWeSn -P > linear.ps
+    # error -P
+gmt basemap -Rg -JW180/25c -Bafg -B+tMollweide
+
 gmt end show
